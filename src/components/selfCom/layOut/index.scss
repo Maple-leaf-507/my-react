@@ -1,0 +1,27 @@
+.box{
+    // width: 200px;
+    // width: 60vw;
+    // margin:10px auto;
+    margin-right: 40px;
+    display: flex;
+    .left{
+        margin-bottom: 20px;
+        &-name{
+            color:#878585;
+            margin-bottom: 10px;
+        }
+        &-name-2,.active-status{
+            width: 200px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+        }
+        .active-status{
+            background: rgb(241, 240, 240);
+            // color:rgb(100, 245, 255);
+        }
+    }
+    .right{
+        margin-left: 100px;
+    }
+}
+

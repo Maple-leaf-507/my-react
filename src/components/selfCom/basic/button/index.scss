@@ -1,0 +1,86 @@
+.button{
+    // width: fit-content;
+    // height: 30px;
+    // line-height: 30px;
+    // border: 1px solid rgb(204, 204, 204);
+    // padding: 5px 20px;
+
+
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+
+// 主要
+.primary{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+
+// 成功
+.success{
+    color: #fff;
+    background-color: #67c23a;
+    border-color: #67c23a;
+}
+
+// 信息
+.info{
+    color: #fff;
+    background-color: #909399;
+    border-color: #909399;
+
+}
+
+// 警告
+.warning{
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+}
+
+// 危险
+.danger{
+    color: #fff;
+    background-color: #e6a23c;
+    border-color: #e6a23c;
+}
+
+// 尺寸
+// medium / small / mini
+.medium{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.small{
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.mini{
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}

@@ -1,0 +1,6 @@
+.App{
+    /* border:1px solid red; */
+    display: flex;
+    width: 60vw;
+    margin:10px auto;
+}

@@ -222,11 +222,8 @@ function Layout() {
             ]
         }
     ]
-    
     const [sidebarIndex,setSidebarIndex] = useState([0,0])
-
     const clickItem2 = function (index, index2) {
-        // console.log('sidebar', sidebar[index].children[index2])
         setSidebarIndex([index, index2])
         navigate('/selfComponents/' + sidebar[index].children[index2].path)
     }

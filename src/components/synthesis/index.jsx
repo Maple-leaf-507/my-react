@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './index.scss'
 
 import Card from "../selfCom/others/card"; // 卡片
 import Button from "../selfCom/basic/button"; // 按钮
 import Progress from "../selfCom/basic/progress"; // 进度条
+import Switch from "../selfCom/basic/switch"; // 开关
+
 
 function Synthesis() {
+    const [value,setValue] = useState(false)
+    const handleValueChange = (e) => {
+        // console.log('父组件',e)
+        setValue(e)
+        // console.log('value',value)
+    }
     return (
         // height={'800'}
         <Card >
@@ -26,7 +34,18 @@ function Synthesis() {
                     <Progress percentage={0}></Progress> 0
                     <Progress percentage={50} style={{marginTop:'20px'}}></Progress> 50
                     <Progress percentage={75} style={{marginTop:'20px'}}></Progress> 75
-                    <Progress percentage={90} style={{marginTop:'20px'}}></Progress> 90
+                    <Progress percentage={90} style={{ marginTop: '20px' }}></Progress> 90
+                    {/* 环形 */}
+                    <Progress percentage={12} style={{marginTop:'20px'}} type="circle"></Progress>12
+                    <Progress percentage={25} style={{ marginTop: '20px' }} type="circle"></Progress>25
+                    <Progress percentage={50} style={{marginTop:'20px'}} type="circle"></Progress>50
+                    <Progress percentage={75} style={{marginTop:'20px'}} type="circle"></Progress>75
+                    <Progress percentage={100} style={{marginTop:'20px'}} type="circle"></Progress>100
+                </div>
+                <div className="Box">四、骨架屏</div>
+                <div className="Box">五、开关</div>
+                <div style={{marginLeft:'30px'}}>
+                    <Switch value={{value}} onValueChange={handleValueChange}></Switch>
                 </div>
             </div>
         </Card>

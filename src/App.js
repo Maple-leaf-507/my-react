@@ -4,7 +4,6 @@ import { Routes, Route,useLocation } from 'react-router-dom';
 import Layout from './components/selfCom/layOut';
 function App() {
   const location = useLocation()
-
   return (
     <div className="App">
       {

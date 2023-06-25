@@ -2,7 +2,6 @@ import React from "react";
 import './index.scss'
 
 function Button(props) {
-    // console.log('props.type', props)
     const style = props.style?props.style:{height:'40px'}
     
     return (
